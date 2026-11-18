@@ -15,7 +15,7 @@ The project does **not** build an ISMS from scratch. It reproduces the **day-to-
 - regulatory watch;
 - awareness campaigns.
 
-![ISMS dashboard](06_dashboard/isms_dashboard.png)
+![ISMS dashboard](isms_dashboard.png)
 
 ---
 
@@ -59,36 +59,6 @@ The project does **not** build an ISMS from scratch. It reproduces the **day-to-
 - The internal audit found **2 minor non-conformities**: patching outside the SLA with an expired exception, and an untested customer-portal DRP.
 - The phishing click rate fell from **17.6 % to 7.3 %** over four simulations.
 
----
-
-## How to run
-
-```bash
-pip install -r requirements.txt
-python scripts/01_generate_registers.py         # registers (synthetic data)
-python scripts/02_kev_vulnerability_analysis.py # downloads the latest CISA KEV and analyses it
-python scripts/03_dashboard_and_workbook.py     # KPIs, dashboard, heat map, Excel workbook
-```
-
-Script 02 downloads the latest KEV catalog. The numbers can therefore change slightly from the 17 Nov 2026 run described in the documents.
-
-## Repository structure
-
-```
-01_context/                         context, scope, interested parties
-02_assets_and_risks/                assets, risk register, treatment plan, risk review
-03_statement_of_applicability/      SoA (93 controls), exception register
-04_vulnerability_management/        CISA KEV analysis (real data)
-05_internal_audit/                  internal audit report, corrective actions
-06_dashboard/                       KPIs, dashboard, risk heat map
-07_committee_and_management_review/ security committee, management review inputs
-08_business_continuity/             BIA, BCP/DRP test schedule
-09_regulatory_watch/                regulatory watch
-10_awareness/                       awareness plan, phishing guide
-11_document_control/                document control register
-scripts/                            Python (pandas, matplotlib, openpyxl)
-data/                               raw KEV file, incident register
-```
 
 ## Limits
 
