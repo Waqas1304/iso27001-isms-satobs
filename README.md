@@ -67,4 +67,4 @@ The project does **not** build an ISMS from scratch. It reproduces the **day-to-
 - In a real ISMS, the risk method, thresholds and SLA would be those defined by the company.
 
 ---
-Author: Waqas Saleem, Environmental & Energy Engineer moving into management systems (ISO 14001 / ISO 27001).
+Author: Waqas Saleem, Environmental & Energy Engineer.
